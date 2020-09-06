@@ -43,6 +43,7 @@ let defaultAnswer = 'You forgot to ask a question, I know that because I really 
   }else {
     answer.innerText = defaultAnswer;
  }
+ question.value = ''; 
 });
 
 
