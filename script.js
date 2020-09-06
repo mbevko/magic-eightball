@@ -7,7 +7,7 @@ shake.addEventListener('click', () => {
 let defaultUserName = userName.value || 'Hello!';
 let userQuestion = question.value;
 let randomNumber = Math.floor(Math.random() * 8);
-let eightBall = '' ;
+let eightBall = '';
 
 switch (randomNumber) {
   case 0:
@@ -36,14 +36,16 @@ switch (randomNumber) {
   break;
 }; 
 
-let defaultAnswer = 'You forgot to ask a question, I know that because I really am magical';
+let defaultAnswer = 'You forgot to ask a question, I know that because I really am magical.';
   if (userQuestion){ 
-    answer.innerText = `${defaultUserName} you asked, ${userQuestion} Magic eightball responds ${eightBall}`
- 
+    answer.innerText = `${defaultUserName} you asked, ${userQuestion} Magic eightball responds: ${eightBall}`
   }else {
     answer.innerText = defaultAnswer;
  }
- question.value = ''; 
+  
+  
+  
+  question.value = "";
 });
 
 
